@@ -1,0 +1,40 @@
+{
+	"src": {
+		"hostname": "imap-mail.outlook.com",
+		"port": 143,
+		"username": "diegopazosrego@hotmail.com",
+		"password": "D221c.,Pazos",
+		"ssl": false,
+		"sslNovalidateCert": false,
+		"readOnly": false,
+		"folderSeparator": ".",
+
+		"excludedFolders": [
+			"INBOX.Spam"
+		],
+		"onlyFoldersNum": [1, 2, 3],
+		"onlyFolderMessagesNum": {
+			"2": [7],
+			"3": [8, 9]
+		},
+		"startFolderNum": 1,
+		"startFolderMessageNum": 1
+	},
+	"dst": {
+		"hostname": "cp203.webempresa.eu",
+		"port": 993,
+		"username": "prueba@diegopruebas.com",
+		"password": "D221c.,Pazos",
+		"ssl": true,
+		"sslNovalidateCert": false,
+		"readOnly": false,
+		"folderSeparator": "/",
+
+		"trimFolderPath": true,
+		"mappedFolders": {
+			"INBOX/Sent": "[Gmail]/Gesendet"
+		},
+		"popFolder": "INBOX",
+		"pushFolder": ""
+	}
+}
